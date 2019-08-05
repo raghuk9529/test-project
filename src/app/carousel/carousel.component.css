@@ -1,0 +1,6 @@
+.carousel,img{
+    max-width:100%;
+}
+.carousel-control-prev-icon{
+   outline: black
+}

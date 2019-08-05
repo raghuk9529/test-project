@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <h2>Deals of the Day</h2>
+    
+  <div class="row products">
+        <div  *ngFor="let x of product" class="col-sm-3" style="text-align:center">
+          <img class="rounded img-fluid" src="./assets/products/{{x.pimage}}" [routerLink]='["/pd",x.id]'>
+          <br/><br/>
+          <a  [routerLink]='["/pd",x.id]' text-align="center" >{{x.itemName | titlecase}}</a> 
+          <br/>
+              <span class="badge badge-success">{{x.rating}} <i class="fa fa-star"></i></span> ({{x.reviews}})
+              <div class="pro-des"> {{x.price | currency:"INR"}}  
+                    <span class="tt">{{ x.oldprice | currency:"INR"}}</span>
+                    <div></div>
+                  <appStd>{{x.discount}} off</appStd>
+              </div>
+              <appStd>Offers</appStd> No Cost EMI & 1 More
+        </div>
+</div>
+</div>
+ 

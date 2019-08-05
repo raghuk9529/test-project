@@ -1,0 +1,42 @@
+.products img{
+    width:300px;
+    height:200px;
+    padding:20px;
+    border:1px solid #aaaeee;
+}
+.products img:hover{
+    transform: scale(1.002);
+    box-shadow:0px 0px 20px rgb(133, 21, 21);
+}
+.products{
+    padding:40px;
+    margin:0 auto;
+    border:2px solid rgb(252, 248, 248);
+    box-shadow:0px 0px 5px #aaa;
+    border-radius:5px;
+    background: beige;
+    max-width:100%;
+}
+.tt{
+    text-decoration:line-through;
+}
+.container-fluid{
+    background:#fff;
+    top:20px;
+    position:relative;
+    padding:8px;
+    max-width:100%;
+}
+h2{
+    padding:5px;
+    color:#7c83eb;
+}
+.badge{
+    font-size:15px;
+}
+.fa-star{
+    font-size:10px;
+} 
+
+
+

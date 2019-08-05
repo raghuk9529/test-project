@@ -1,0 +1,22 @@
+<form [formGroup]='myform'>
+  <div class="form-group">
+      <label for="pwd">Full Name:</label>
+      <input type="text" class="form-control" formControlName="fullName" placeholder="Full Name">
+      <span *ngIf="myform.controls.fullName.touched && myform.controls.fullName.errors && myform.controls.fullName.errors.required">Enter User Name</span>
+      <span *ngIf="myform.controls.fullName.errors && myform.controls.fullName.errors.pattern">Accepts only Alphabet letters</span>
+    </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" formControlName="emailName" placeholder="Enter email">
+    <span *ngIf="myform.controls.emailName.touched && myform.controls.emailName.errors && myform.controls.emailName.errors.required">Enter email</span>
+    <span *ngIf='myform.controls.emailName.errors && myform.controls.emailName.errors.email'>Enter proper email Id</span>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" formControlName="pwd" placeholder="Enter password" >
+    <span *ngIf="myform.controls.pwd.touched && myform.controls.pwd.errors && myform.controls.pwd.errors.required">Enter password</span>
+    <span *ngIf="myform.controls.pwd.errors && myform.controls.pwd.errors.pattern">Password must be alphanumeric</span>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
